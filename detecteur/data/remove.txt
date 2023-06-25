@@ -1,0 +1,15 @@
+filename = "./dataset_apache_train_sample.csv"
+lines_to_remove = 30000
+
+# Read the file and store its content in a list
+with open(filename, "r") as file:
+    lines = file.readlines()
+
+# Remove the last 30,000 lines
+updated_lines = lines[:-lines_to_remove]
+
+# Write the updated content back to the file
+with open(filename, "w") as file:
+    file.writelines(updated_lines)
+
+print(f"{lines_to_remove} lines removed from {filename}.")
