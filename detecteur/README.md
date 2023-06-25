@@ -1,16 +1,40 @@
-Application de Détection d'Anomalies dans les Logs Apache
+# Détection d'anomalies dans les logs Apache
 
 Notre application est conçue pour détecter les anomalies dans les logs Apache, offrant ainsi une solution avancée de détection des attaques telles que les attaques par déni de service distribué (DDoS) ou les intrusions malveillantes.
-Logs Apache et Détection d'Anomalies
 
-Les logs Apache sont des enregistrements détaillés des activités sur un serveur web, comprenant des informations telles que les adresses IP, les horodatages, les requêtes, les statuts, les tailles des fichiers, les référents, les navigateurs utilisés et les pays d'origine. Notre application analyse ces logs pour détecter les schémas et les comportements suspects, permettant ainsi de protéger votre infrastructure contre les cyberattaques.
-Techniques d'Apprentissage Automatique Avancées
+## Fonctionnalités
 
-L'application utilise des techniques avancées d'apprentissage automatique pour modéliser les comportements normaux et identifier les anomalies. Elle prépare les données en les encodant, en les vectorisant et en les divisant en ensembles d'entraînement et de validation. Ensuite, elle applique des modèles tels que l'IsolationForest et la OneClassSVM pour calculer les scores d'anomalie et effectuer la détection.
-Personnalisation des Seuils de Détection
+- Analyse des logs Apache pour détecter les schémas et les comportements suspects.
+- Utilisation de techniques d'apprentissage automatique avancées, notamment l'IsolationForest et la OneClassSVM.
+- Préparation des données en encodant et en vectorisant les informations pertinentes.
+- Division des données en ensembles d'entraînement et de validation.
+- Possibilité d'ajuster les seuils de détection d'anomalies pour des résultats personnalisés.
+- Maximisation du score F1 global ou privilège du rappel pour la détection des attaques spécifiques.
 
-Notre application offre également des fonctionnalités flexibles pour ajuster les seuils de détection d'anomalies, ce qui permet de personnaliser les résultats en fonction de vos besoins spécifiques. Vous pouvez maximiser le score F1 global ou privilégier le rappel pour la détection des attaques spécifiques.
-Renforcez la Sécurité de Votre Infrastructure Apache
+## Comment utiliser l'application
+
+1. Importez les logs Apache dans l'application.
+2. Lancez l'analyse pour détecter les anomalies.
+3. Consultez les résultats et les scores d'anomalie.
+4. Utilisez les seuils de détection pour personnaliser les résultats.
+5. Prenez les mesures nécessaires pour protéger votre infrastructure contre les attaques détectées.
+
+## Installation
+
+1. Clonez le dépôt GitHub de l'application.
+2. Installez les dépendances requises à l'aide de pip install -r requirements.txt.
+3. Exécutez l'application à l'aide de la commande python app.py.
+
+## Exigences système
+
+- Python 3.6 ou une version ultérieure.
+- Système d'exploitation compatible (Windows, macOS, Linux).
+
+## Avertissement
+
+Veuillez noter que l'efficacité de la détection d'anomalies dépend de la qualité des logs Apache fournis et de la configuration des seuils de détection. Il est recommandé de suivre les instructions du guide de l'utilisateur pour des résultats optimaux.
+
+---
 
 En utilisant notre application de détection d'anomalies dans les logs Apache, vous pourrez renforcer la sécurité de votre infrastructure en identifiant rapidement les activités suspectes et en prenant les mesures nécessaires pour protéger vos systèmes.
 
